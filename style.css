@@ -1273,6 +1273,54 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-cement);
 }
 
+/* Tool Badges Grid System (Bento 4th Card) */
+.tools-container-bento {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.tool-subcategory {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tool-sub-title {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--color-brick);
+}
+
+.tool-badges-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tool-badge-item {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: var(--border-radius-sm);
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    cursor: default;
+    transition: all var(--transition-fast);
+}
+
+.tool-badge-item:hover {
+    background-color: var(--color-brick);
+    color: #ffffff !important;
+    border-color: var(--color-brick);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(184, 58, 45, 0.2);
+}
+
 /* ==========================================================================
    CREDENTIALS & ACTION SECTION
    ========================================================================== */
