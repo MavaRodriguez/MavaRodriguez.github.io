@@ -1943,3 +1943,76 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   LIGHT MODE OVERRIDES FOR SKILLS CARDS (MI ENFOQUE ESTRATÉGICO)
+   ========================================================================== */
+[data-theme="light"] .skills-category-card.bento-gray-dark,
+[data-theme="light"] .skills-category-card.bento-green,
+[data-theme="light"] .skills-category-card.bento-orange-dark {
+    background-color: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+[data-theme="light"] .skills-category-card.bento-gray-dark:hover,
+[data-theme="light"] .skills-category-card.bento-green:hover,
+[data-theme="light"] .skills-category-card.bento-orange-dark:hover {
+    border-color: var(--border-color-hover) !important;
+    box-shadow: var(--card-shadow-hover) !important;
+}
+
+/* Category Headers and Icons */
+[data-theme="light"] .skills-category-card.bento-gray-dark .category-header h3,
+[data-theme="light"] .skills-category-card.bento-gray-dark .category-header i {
+    color: var(--text-primary) !important;
+}
+[data-theme="light"] .skills-category-card.bento-green .category-header h3,
+[data-theme="light"] .skills-category-card.bento-green .category-header i {
+    color: var(--color-sage) !important;
+}
+[data-theme="light"] .skills-category-card.bento-orange-dark .category-header h3,
+[data-theme="light"] .skills-category-card.bento-orange-dark .category-header i {
+    color: var(--color-orange) !important;
+}
+
+/* Card Stamps inside Skills Grid in Light Mode */
+[data-theme="light"] .skills-category-card .card-stamp {
+    color: var(--text-muted) !important;
+    opacity: 0.8 !important;
+}
+
+/* Skill Info Text (labels and badges) in Light Mode */
+[data-theme="light"] .skills-category-card .skill-info-bento span:first-child {
+    color: var(--text-primary) !important;
+}
+[data-theme="light"] .skills-category-card .skill-info-bento span:last-child {
+    color: var(--color-brick) !important;
+}
+
+/* Meter Bars in Light Mode */
+[data-theme="light"] .skills-category-card .meter-bar-bento {
+    background-color: rgba(8, 9, 10, 0.05) !important;
+    border-color: var(--text-primary) !important;
+}
+
+/* Specific Meter Bar Fills for light theme to pop beautifully */
+[data-theme="light"] .skills-category-card.bento-gray-dark .meter-bar-fill {
+    background-color: var(--text-muted) !important;
+}
+[data-theme="light"] .skills-category-card.bento-green .meter-bar-fill {
+    background-color: var(--color-sage) !important;
+}
+[data-theme="light"] .skills-category-card.bento-orange-dark .meter-bar-fill {
+    background-color: var(--color-orange) !important;
+}
+
+/* Inline style overrides for the STACK tag footers in Light Mode */
+[data-theme="light"] .skills-category-card .card-footer-mono {
+    color: var(--text-secondary) !important;
+    border-top-color: rgba(8, 9, 10, 0.1) !important;
+}
+[data-theme="light"] .skills-category-card .card-footer-mono span {
+    background-color: rgba(8, 9, 10, 0.05) !important;
+}
