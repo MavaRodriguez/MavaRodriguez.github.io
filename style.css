@@ -1656,7 +1656,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-group input, .form-group textarea {
-    background-color: rgba(8, 9, 10, 0.05);
+    background-color: #ffffff !important;
     border: 1.5px solid #08090a;
     color: #08090a;
     font-family: inherit;

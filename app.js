@@ -182,9 +182,9 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Check if form is still using default Formspree placeholder ID
             const actionUrl = contactForm.getAttribute('action');
-            if (actionUrl.includes('tu-id-de-formulario')) {
+            if (actionUrl.includes('TU_ID_DE_FORMSPREE_AQUI') || actionUrl.includes('tu-id-de-formulario') || actionUrl.includes('mariavanessarf7')) {
                 // For demonstration purposes, if the ID is placeholder, we simulate success
-                showFormStatus('¡Formulario configurado! En producción, este mensaje se enviaría a tu correo mediante Formspree.', 'success');
+                showFormStatus('¡Envío de prueba exitoso! El formulario se ha limpiado correctamente. (Para recibir correos reales, recuerda crear un formulario gratuito en Formspree.io y reemplazar "TU_ID_DE_FORMSPREE_AQUI" por tu ID de 8 caracteres en tu index.html).', 'success');
                 contactForm.reset();
                 return;
             }
