@@ -15,10 +15,10 @@
     <meta property="og:image" content="https://MavaRodriguez.github.io/og-image.jpg">
     <meta property="og:url" content="https://MavaRodriguez.github.io/">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Space Grotesk & Space Mono (Cyberpunk / Industrial Tech) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -26,25 +26,21 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Background Elements for Premium Look -->
-    <div class="bg-blur bg-blur-1"></div>
-    <div class="bg-blur bg-blur-2"></div>
-
+<body class="industrial-theme">
     <!-- Header & Navigation -->
     <header id="main-header" class="header">
         <div class="container header-container">
             <a href="#" class="logo" id="header-logo">
-                <span class="logo-dot"></span>Mava<span class="logo-accent">.dev</span>
+                <span class="logo-dot"></span>MAVA<span class="logo-accent">.SYS</span>
             </a>
             
             <nav id="main-nav" class="nav">
                 <ul class="nav-list">
-                    <li><a href="#about" class="nav-link active" id="link-about">Sobre Mí</a></li>
-                    <li><a href="#experience" class="nav-link" id="link-experience">Trayectoria</a></li>
-                    <li><a href="#skills" class="nav-link" id="link-skills">Habilidades</a></li>
-                    <li><a href="#credentials" class="nav-link" id="link-credentials">Credenciales</a></li>
-                    <li><a href="#contact" class="nav-link nav-btn" id="link-contact">Contáctame</a></li>
+                    <li><a href="#about" class="nav-link active" id="link-about">[01. SOBRE MÍ]</a></li>
+                    <li><a href="#experience" class="nav-link" id="link-experience">[02. TRAYECTORIA]</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">[03. HABILIDADES]</a></li>
+                    <li><a href="#credentials" class="nav-link" id="link-credentials">[04. CREDENCIALES]</a></li>
+                    <li><a href="#contact" class="nav-link nav-btn" id="link-contact">CONTÁCTAME ↗</a></li>
                 </ul>
             </nav>
 
@@ -71,19 +67,23 @@
         <section id="hero" class="hero-section">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-tagline" id="hero-welcome">Estrategia & Visibilidad Orgánica</span>
+                    <div class="sys-status">
+                        <span class="status-pulse"></span>
+                        <span class="sys-code">STATUS: ACTIVE // [AEO.GEO.SEO]</span>
+                    </div>
+                    <span class="hero-tagline" id="hero-welcome">BRAND STRATEGY & ORGANIC VISIBILITY</span>
                     <h1 class="hero-title" id="hero-name">Mava <span class="gradient-text">Rodríguez</span></h1>
                     <h2 class="hero-subtitle" id="hero-role">Brand Strategy & SEO | GEO | AEO | Contenido B2B | B2B SaaS & Tech</h2>
                     <p class="hero-description" id="hero-desc">
-                        Especialista en visibilidad orgánica para productos <strong>B2B SaaS & Tech</strong>. Combino narrativa de marca, SEO técnico y optimización para motores de IA generativa (AEO/GEO) para definir el nuevo estándar del posicionamiento de marca.
+                        Especialista en visibilidad orgánica para productos <strong>B2B SaaS & Tech</strong>. Combino narrativa de marca, SEO técnico y optimización avanzada para motores de IA generativa (AEO/GEO) para estructurar el nuevo estándar del posicionamiento de marca.
                     </p>
                     
                     <div class="hero-actions">
                         <a href="#contact" class="btn btn-primary" id="hero-btn-contact">
-                            <span>Hablemos</span> <i class="fa-solid fa-paper-plane"></i>
+                            <span>INICIAR CONTACTO</span> <span class="btn-arrow">↗</span>
                         </a>
                         <a href="#experience" class="btn btn-secondary" id="hero-btn-resume">
-                            <span>Ver Experiencia</span> <i class="fa-solid fa-arrow-down"></i>
+                            <span>VER TRAYECTORIA</span> <span class="btn-arrow">↓</span>
                         </a>
                     </div>
 
@@ -100,30 +100,43 @@
                     </div>
                 </div>
                 
+                <!-- Hero Visual Card (Orange Bento Card) -->
                 <div class="hero-visual">
                     <div class="visual-card-wrapper">
-                        <div class="visual-card">
-                            <div class="card-header">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                                <span class="card-title">brand_strategy_seo.py</span>
+                        <div class="visual-card bento-card bento-orange">
+                            <div class="bento-header-cbr">
+                                <span class="bento-logo-text">MAVASYS</span>
+                                <div class="bento-arrow-giant">↗</div>
                             </div>
-                            <div class="card-body">
-                                <pre><code><span class="keyword">class</span> <span class="variable">MavaRodriguez</span>:
-    role = <span class="string">'Brand & SEO Specialist'</span>
-    industry = <span class="string">'B2B SaaS & Tech'</span>
-    experience_years = <span class="variable">9</span>
-    
-    specialties = [
-        <span class="string">'Brand Strategy'</span>,
-        <span class="string">'Technical SEO'</span>,
-        <span class="string">'AEO / GEO (AI Optimization)'</span>,
-        <span class="string">'B2B Content'</span>
-    ]
-    
-    <span class="keyword">def</span> <span class="variable">create_impact</span>(self):
-        return <span class="string">"Connecting brands with people through data."</span></code></pre>
+                            
+                            <div class="bento-adsr-panel">
+                                <div class="bento-adsr-graph">
+                                    <div class="adsr-bar" style="height: 40%"><span>SEO</span></div>
+                                    <div class="adsr-bar active" style="height: 90%"><span>AEO</span></div>
+                                    <div class="adsr-bar" style="height: 75%"><span>GEO</span></div>
+                                    <div class="adsr-bar" style="height: 60%"><span>B2B</span></div>
+                                </div>
+                                
+                                <div class="bento-param-table">
+                                    <div class="param-row">
+                                        <span class="param-label">UA 570-B</span>
+                                        <span class="param-val">VAL: ACTIVE</span>
+                                    </div>
+                                    <div class="param-row">
+                                        <span class="param-label">EXPERIENCE</span>
+                                        <span class="param-val">9+ YRS</span>
+                                    </div>
+                                    <div class="param-row">
+                                        <span class="param-label">LLM OPT</span>
+                                        <span class="param-val">100%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bento-footer-barcode">
+                                <span class="bento-hash">#EOA15E</span>
+                                <div class="barcode-graphic"></div>
+                                <span class="bento-stamp">CORP.SYS</span>
                             </div>
                         </div>
                     </div>
@@ -131,53 +144,56 @@
             </div>
         </section>
 
-        <!-- About Me Section -->
+        <!-- About Me Section (Bento Grid) -->
         <section id="about" class="about-section section-padding">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Sobre Mí</span>
+                    <span class="section-tag">[01 // CONCEPT]</span>
                     <h2 class="section-title">Quién soy y qué propongo</h2>
                     <div class="section-line"></div>
                 </div>
                 
                 <div class="about-grid">
-                    <div class="about-info">
+                    <div class="about-info bento-card bento-gray">
+                        <div class="card-stamp">SYS.INFO // 01</div>
                         <p class="about-text">
                             Egresada en Publicidad y Marketing Digital con más de 9 años de experiencia en comunicación digital. Me especializo en posicionamiento de marca y visibilidad orgánica para productos B2B SaaS, Tech y plataformas digitales, liderando estrategias integradas que combinan narrativa de marca, SEO técnico y optimización para motores de IA generativa (AEO/LLM/GEO).
                         </p>
                         <p class="about-text">
                             Me muevo con igual comodidad entre la estrategia y la ejecución: desde definir el concepto creativo de una campaña de impacto hasta optimizar un schema markup avanzado o analizar detalladamente el rendimiento en herramientas clave de analítica. Creo firmemente que las mejores estrategias nacen de entender profundamente a las personas, los datos y la cultura única de una marca.
                         </p>
-                        <p class="about-text">
-                            <strong>Fuera del trabajo:</strong> Soy una apasionada por el gaming, la cultura digital moderna y la música.
+                        <p class="about-text font-mono">
+                            // FUERA DEL TRABAJO: Apasionada por el gaming, la cultura digital y la música.
                         </p>
                         
-                        <div class="about-stats">
-                            <div class="stat-card">
-                                <span class="stat-number">+9</span>
-                                <span class="stat-label">Años de Exp.</span>
+                        <div class="about-stats-bento">
+                            <div class="stat-item-bento">
+                                <span class="stat-num-bento">+9</span>
+                                <span class="stat-lbl-bento">AÑOS EXP</span>
                             </div>
-                            <div class="stat-card">
-                                <span class="stat-number">AEO/GEO</span>
-                                <span class="stat-label">Optimización IA</span>
+                            <div class="stat-item-bento">
+                                <span class="stat-num-bento">AEO</span>
+                                <span class="stat-lbl-bento">IA OPT</span>
                             </div>
-                            <div class="stat-card">
-                                <span class="stat-number">SaaS</span>
-                                <span class="stat-label">B2B & Tech Focus</span>
+                            <div class="stat-item-bento">
+                                <span class="stat-num-bento">B2B</span>
+                                <span class="stat-lbl-bento">SAAS GROW</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="about-details-card">
+                    <!-- Vertical Red Card (Inspired by the Left Red Card in Reference) -->
+                    <div class="about-details-card bento-card bento-red">
+                        <span class="card-stamp-vertical">CYBERPUNK TECH 2026 // 01</span>
                         <div class="profile-img-container">
                             <img src="img/mava-profile.jpg" alt="Mava Rodríguez" class="profile-img">
                         </div>
-                        <h3>Detalles Profesionales</h3>
-                        <ul class="details-list">
-                            <li><strong>Especialidad:</strong> Brand Strategy, SEO, GEO/AEO & Contenido B2B</li>
-                            <li><strong>Industrias:</strong> B2B SaaS, Tech, Agencias Creativas</li>
-                            <li><strong>Educación:</strong> Publicidad y Marketing Digital</li>
-                            <li><strong>Disponibilidad:</strong> Fullstack Brand / SEO Strategist</li>
+                        <h3 class="bento-red-title">Mava Rodriguez</h3>
+                        <ul class="details-list-bento">
+                            <li><span class="detail-label">SPEC:</span> <span class="detail-val">Brand & SEO & GEO</span></li>
+                            <li><span class="detail-label">IND:</span> <span class="detail-val">B2B SaaS, Tech</span></li>
+                            <li><span class="detail-label">EDU:</span> <span class="detail-val">Marketing Digital</span></li>
+                            <li><span class="detail-label">STATUS:</span> <span class="detail-val">READY FOR RETOS</span></li>
                         </ul>
                     </div>
                 </div>
@@ -188,7 +204,7 @@
         <section id="experience" class="experience-section section-padding">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Trayectoria</span>
+                    <span class="section-tag">[02 // LOGS]</span>
                     <h2 class="section-title">Mi Historial Profesional</h2>
                     <div class="section-line"></div>
                 </div>
@@ -197,8 +213,9 @@
                     <!-- Mandü HR 1 -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Ene. 2026 - Actualidad (5 meses)</div>
-                        <div class="timeline-content">
+                        <div class="timeline-date">[2026 - ACTUALIDAD] // 5 MESES</div>
+                        <div class="timeline-content bento-card">
+                            <div class="timeline-stamp">SYS.MANDU.01</div>
                             <h3 class="role-title">Brand & Content Specialist</h3>
                             <h4 class="company-name">Mandü HR (by VISMA) · Jornada completa · Híbrido</h4>
                             <p class="role-desc">
@@ -212,11 +229,10 @@
                                 <li>Integro herramientas de inteligencia artificial (Claude, ChatGPT, Perplexity, Figma Make) en flujos de trabajo de contenido y SEO con foco en visibilidad en motores generativos.</li>
                             </ul>
                             <div class="role-tags">
-                                <span class="badge">Brand Strategy</span>
-                                <span class="badge">AEO/GEO</span>
-                                <span class="badge">Technical SEO</span>
-                                <span class="badge">Generative AI Tools</span>
-                                <span class="badge">B2B Marketing</span>
+                                <span class="badge">#BRAND-STRATEGY</span>
+                                <span class="badge">#AEO-GEO</span>
+                                <span class="badge">#TECHNICAL-SEO</span>
+                                <span class="badge">#GENERATIVE-AI</span>
                             </div>
                         </div>
                     </div>
@@ -224,8 +240,9 @@
                     <!-- Mandü HR 2 -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Ene. 2025 - Dic. 2025 (1 año)</div>
-                        <div class="timeline-content">
+                        <div class="timeline-date">[2025 - 2025] // 1 AÑO</div>
+                        <div class="timeline-content bento-card">
+                            <div class="timeline-stamp">SYS.MANDU.02</div>
                             <h3 class="role-title">Brand Analyst Senior</h3>
                             <h4 class="company-name">Mandü HR (by VISMA) · Jornada completa</h4>
                             <p class="role-desc">
@@ -237,10 +254,10 @@
                                 <li>Gestioné en paralelo indicadores clave de generación de demanda (MQL/SQL) y supervisión de pauta digital.</li>
                             </ul>
                             <div class="role-tags">
-                                <span class="badge">Rebranding</span>
-                                <span class="badge">Product Launch</span>
-                                <span class="badge">Web Development Mgmt</span>
-                                <span class="badge">MQL/SQL</span>
+                                <span class="badge">#REBRANDING</span>
+                                <span class="badge">#PRODUCT-LAUNCH</span>
+                                <span class="badge">#WEB-MGMT</span>
+                                <span class="badge">#MQL-SQL</span>
                             </div>
                         </div>
                     </div>
@@ -248,8 +265,9 @@
                     <!-- Visma LatAm -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Mar. 2023 - Dic. 2024 (1 año 10 meses)</div>
-                        <div class="timeline-content">
+                        <div class="timeline-date">[2023 - 2024] // 1 AÑO 10 MESES</div>
+                        <div class="timeline-content bento-card">
+                            <div class="timeline-stamp">SYS.VISMA.01</div>
                             <h3 class="role-title">Digital Marketing Strategist - LatAm</h3>
                             <h4 class="company-name">Visma · Jornada completa · En remoto</h4>
                             <p class="role-desc">
@@ -263,11 +281,10 @@
                                 <li>Realicé seguimiento comercial de actividades, propuestas y cierres provenientes de pauta, reportando métricas de rendimiento a la dirección de LatAm.</li>
                             </ul>
                             <div class="role-tags">
-                                <span class="badge">LinkedIn Ads</span>
-                                <span class="badge">Google Ads</span>
-                                <span class="badge">SEO Supervision</span>
-                                <span class="badge">LatAm Operations</span>
-                                <span class="badge">Paid Media</span>
+                                <span class="badge">#LINKEDIN-ADS</span>
+                                <span class="badge">#GOOGLE-ADS</span>
+                                <span class="badge">#SEO-SUPERVISION</span>
+                                <span class="badge">#PAID-MEDIA</span>
                             </div>
                         </div>
                     </div>
@@ -275,8 +292,9 @@
                     <!-- Mandü HR 3 -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Mar. 2020 - Mar. 2023 (3 años 1 mes)</div>
-                        <div class="timeline-content">
+                        <div class="timeline-date">[2020 - 2023] // 3 AÑOS 1 MES</div>
+                        <div class="timeline-content bento-card">
+                            <div class="timeline-stamp">SYS.MANDU.03</div>
                             <h3 class="role-title">Content Creator</h3>
                             <h4 class="company-name">Mandü HR · Jornada completa · En remoto</h4>
                             <p class="role-desc">
@@ -289,10 +307,10 @@
                                 <li>Inicié y desarrollé las primeras estrategias de SEO técnico enfocadas en el posicionamiento orgánico de www.mandu.pe.</li>
                             </ul>
                             <div class="role-tags">
-                                <span class="badge">Content Strategy</span>
-                                <span class="badge">Copywriting</span>
-                                <span class="badge">Podcast Scripting</span>
-                                <span class="badge">Early-Stage SEO</span>
+                                <span class="badge">#CONTENT-STRATEGY</span>
+                                <span class="badge">#COPYWRITING</span>
+                                <span class="badge">#PODCAST-SCRIPTING</span>
+                                <span class="badge">#EARLY-SEO</span>
                             </div>
                         </div>
                     </div>
@@ -300,8 +318,9 @@
                     <!-- Pasaporte Studio Copywriter -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Ene. 2019 - Mar. 2020 (1 año 3 meses)</div>
-                        <div class="timeline-content">
+                        <div class="timeline-date">[2019 - 2020] // 1 AÑO 3 MESES</div>
+                        <div class="timeline-content bento-card">
+                            <div class="timeline-stamp">SYS.PASAPORTE.01</div>
                             <h3 class="role-title">Copywriter</h3>
                             <h4 class="company-name">Pasaporte Studio · Jornada completa · Presencial</h4>
                             <p class="role-desc">
@@ -313,9 +332,9 @@
                                 <li>Lideré procesos de naming para nuevos productos del mercado (como KARPI).</li>
                             </ul>
                             <div class="role-tags">
-                                <span class="badge">Creative Copywriting</span>
-                                <span class="badge">Naming Processes</span>
-                                <span class="badge">Content Planning</span>
+                                <span class="badge">#CREATIVE-COPYWRITING</span>
+                                <span class="badge">#NAMING-PROCESS</span>
+                                <span class="badge">#CONTENT-PLANNING</span>
                             </div>
                         </div>
                     </div>
@@ -323,8 +342,9 @@
                     <!-- Pasaporte Studio Community Manager -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Mar. 2018 - Ene. 2019 (11 meses)</div>
-                        <div class="timeline-content">
+                        <div class="timeline-date">[2018 - 2019] // 11 MESES</div>
+                        <div class="timeline-content bento-card">
+                            <div class="timeline-stamp">SYS.PASAPORTE.02</div>
                             <h3 class="role-title">Community Manager</h3>
                             <h4 class="company-name">Pasaporte Studio · Jornada completa · Presencial</h4>
                             <p class="role-desc">
@@ -336,10 +356,10 @@
                                 <li>Fui responsable del research, benchmarking competitivo y la reportería cualitativa y cuantitativa de Social Media.</li>
                             </ul>
                             <div class="role-tags">
-                                <span class="badge">Social Media Mgmt</span>
-                                <span class="badge">Facebook Ads</span>
-                                <span class="badge">Benchmarking</span>
-                                <span class="badge">Reporting</span>
+                                <span class="badge">#SOCIAL-MEDIA-MGMT</span>
+                                <span class="badge">#FACEBOOK-ADS</span>
+                                <span class="badge">#BENCHMARKING</span>
+                                <span class="badge">#REPORTING</span>
                             </div>
                         </div>
                     </div>
@@ -347,8 +367,9 @@
                     <!-- Practicas -->
                     <div class="timeline-item">
                         <div class="timeline-dot"></div>
-                        <div class="timeline-date">Mar. 2016 - Ene. 2018</div>
-                        <div class="timeline-content">
+                        <div class="timeline-date">[2016 - 2018] // PRÁCTICAS</div>
+                        <div class="timeline-content bento-card">
+                            <div class="timeline-stamp">SYS.INTERN.FMT</div>
                             <h3 class="role-title">Fase de Prácticas Profesionales</h3>
                             <h4 class="company-name">Diversas Agencias Digitales</h4>
                             <p class="role-desc">
@@ -360,9 +381,9 @@
                                 <li><strong>Practicante ATL Copywriting (Yellow, mar. 2016 - jul. 2016):</strong> Ideación y redacción creativa tradicional para cuentas como VISA, Vicks y Nescafé.</li>
                             </ul>
                             <div class="role-tags">
-                                <span class="badge">Copywriting ATL</span>
-                                <span class="badge">Paid Ads Planning</span>
-                                <span class="badge">Community Management</span>
+                                <span class="badge">#COPYWRITING-ATL</span>
+                                <span class="badge">#PAID-ADS-PLANNING</span>
+                                <span class="badge">#COMMUNITY-MGMT</span>
                             </div>
                         </div>
                     </div>
@@ -370,126 +391,129 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
+        <!-- Skills Section (Bento Grid) -->
         <section id="skills" class="skills-section section-padding">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Habilidades</span>
+                    <span class="section-tag">[03 // STACK]</span>
                     <h2 class="section-title">Mi Stack de Especialidades</h2>
                     <div class="section-line"></div>
                 </div>
 
                 <div class="skills-grid">
-                    <!-- Category 1 -->
-                    <div class="skills-category-card">
+                    <!-- Category 1 (Sage Green Card) -->
+                    <div class="skills-category-card bento-card bento-green">
                         <div class="category-header">
                             <i class="fa-solid fa-bullseye category-icon"></i>
-                            <h3>Brand & Content Strategy</h3>
+                            <h3>Brand & Content</h3>
+                            <span class="card-stamp">DPM SYSTM // CE</span>
                         </div>
-                        <ul class="skills-list">
-                            <li class="skill-item">
-                                <div class="skill-info">
+                        <ul class="skills-list-bento">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>Brand Strategy & Rebranding</span>
                                     <span>95%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 95%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>Contenido B2B & Narrative</span>
                                     <span>92%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 92%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>Copywriting & Naming</span>
                                     <span>90%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 90%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
-                                    <span>Conceptos Creativos / Campañas 360</span>
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
+                                    <span>Conceptos Creativos / Campañas</span>
                                     <span>88%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 88%"></div></div>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Category 2 -->
-                    <div class="skills-category-card">
+                    <!-- Category 2 (Orange Card) -->
+                    <div class="skills-category-card bento-card bento-orange-dark">
                         <div class="category-header">
                             <i class="fa-solid fa-magnifying-glass category-icon"></i>
-                            <h3>Advanced SEO & AI Optimization</h3>
+                            <h3>Advanced SEO & AI</h3>
+                            <span class="card-stamp">SYS.SEO.AEO // 25</span>
                         </div>
-                        <ul class="skills-list">
-                            <li class="skill-item">
-                                <div class="skill-info">
+                        <ul class="skills-list-bento">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>SEO Técnico & On-Page</span>
                                     <span>90%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 90%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
-                                    <span>AEO & GEO (AI Search Engine Opt.)</span>
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
+                                    <span>AEO & GEO (AI Search Opt.)</span>
                                     <span>85%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 85%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>Google Search Console & Screaming Frog</span>
                                     <span>88%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 88%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>Ahrefs, Semrush & Looker Studio</span>
                                     <span>85%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 85%"></div></div>
                             </li>
                         </ul>
                     </div>
 
-                    <!-- Category 3 -->
-                    <div class="skills-category-card">
+                    <!-- Category 3 (Gray Card) -->
+                    <div class="skills-category-card bento-card bento-gray-dark">
                         <div class="category-header">
                             <i class="fa-solid fa-rocket category-icon"></i>
-                            <h3>Tech & Productivity Stack</h3>
+                            <h3>Tech & Productivity</h3>
+                            <span class="card-stamp">SYS.TECH.PROD</span>
                         </div>
-                        <ul class="skills-list">
-                            <li class="skill-item">
-                                <div class="skill-info">
-                                    <span>IA Generativa (Claude, ChatGPT, Perplexity)</span>
+                        <ul class="skills-list-bento">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
+                                    <span>IA Generativa (Claude, ChatGPT)</span>
                                     <span>92%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 92%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>LinkedIn Ads & Meta Ads</span>
                                     <span>80%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 80%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 80%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>Figma & Make (Automations)</span>
                                     <span>85%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 85%"></div></div>
                             </li>
-                            <li class="skill-item">
-                                <div class="skill-info">
+                            <li class="skill-item-bento">
+                                <div class="skill-info-bento">
                                     <span>Git & GitHub (Web deployment)</span>
                                     <span>75%</span>
                                 </div>
-                                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 75%"></div></div>
+                                <div class="meter-bar-bento"><div class="meter-bar-fill" style="width: 75%"></div></div>
                             </li>
                         </ul>
                     </div>
@@ -497,12 +521,11 @@
             </div>
         </section>
 
-
         <!-- Credentials & Action Section -->
         <section id="credentials" class="credentials-section section-padding">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Garantía Profesional</span>
+                    <span class="section-tag">[04 // PROOF]</span>
                     <h2 class="section-title">Certificaciones & Ejecución</h2>
                     <div class="section-line"></div>
                 </div>
@@ -517,12 +540,12 @@
                         
                         <div class="certs-stack">
                             <!-- Cert 1: HubSpot -->
-                            <div class="cert-card">
+                            <div class="cert-card bento-card">
                                 <a href="img/cert-hubspot.png" target="_blank" class="cert-img-wrapper" title="Ampliar Certificado de HubSpot">
                                     <img src="img/cert-hubspot.png" alt="HubSpot Marketing Hub Software Certified" class="cert-img-thumbnail">
                                     <div class="cert-img-overlay">
                                         <i class="fa-solid fa-magnifying-glass-plus"></i>
-                                        <span>Ampliar</span>
+                                        <span>AMPLIAR</span>
                                     </div>
                                 </a>
                                 <div class="cert-info">
@@ -534,12 +557,12 @@
                             </div>
 
                             <!-- Cert 2: Looker Studio -->
-                            <div class="cert-card">
+                            <div class="cert-card bento-card">
                                 <a href="img/cert-looker-studio.png" target="_blank" class="cert-img-wrapper" title="Ampliar Certificado de Looker Studio">
                                     <img src="img/cert-looker-studio.png" alt="Looker Studio con Google Analytics 4" class="cert-img-thumbnail">
                                     <div class="cert-img-overlay">
                                         <i class="fa-solid fa-magnifying-glass-plus"></i>
-                                        <span>Ampliar</span>
+                                        <span>AMPLIAR</span>
                                     </div>
                                 </a>
                                 <div class="cert-info">
@@ -550,12 +573,12 @@
                             </div>
 
                             <!-- Cert 3: SEO -->
-                            <div class="cert-card">
+                            <div class="cert-card bento-card">
                                 <a href="img/cert-seo.png" target="_blank" class="cert-img-wrapper" title="Ampliar Certificado de SEO Coderhouse">
                                     <img src="img/cert-seo.png" alt="SEO - Optimización de motores de búsqueda" class="cert-img-thumbnail">
                                     <div class="cert-img-overlay">
                                         <i class="fa-solid fa-magnifying-glass-plus"></i>
-                                        <span>Ampliar</span>
+                                        <span>AMPLIAR</span>
                                     </div>
                                 </a>
                                 <div class="cert-info">
@@ -567,19 +590,20 @@
                         </div>
                     </div>
 
-                    <!-- Production Column -->
+                    <!-- Production Column (Gray Bento Card) -->
                     <div class="credentials-production">
                         <div class="credentials-title-group">
                             <i class="fa-solid fa-video credentials-title-icon"></i>
                             <h3>Estrategia en la Práctica</h3>
                         </div>
                         
-                        <div class="production-card">
+                        <div class="production-card bento-card bento-gray">
+                            <div class="card-stamp">RETRO AI TECHNOLOGY // 25</div>
                             <div class="production-img-wrapper">
                                 <img src="img/mava-production.jpg" alt="Mava Rodríguez en producción de contenido" class="production-img">
                             </div>
                             <div class="production-content">
-                                <h4>Estrategia en la mesa, ejecución en el campo</h4>
+                                <h4>Estrategia en la mesa, ejecución en el campo ↗</h4>
                                 <p>
                                     Liderando e implementando la dirección creativa y producción de contenidos multimedia de alto impacto corporativo. La comunicación digital premium no solo se planifica; se ejecuta con precisión técnica, narrativa consistente y el equipamiento adecuado en el set.
                                 </p>
@@ -594,37 +618,38 @@
         <section id="contact" class="contact-section section-padding">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Contacto</span>
+                    <span class="section-tag">[05 // CONNECT]</span>
                     <h2 class="section-title">¡Hablemos de tu marca!</h2>
                     <div class="section-line"></div>
                 </div>
 
                 <div class="contact-grid">
-                    <div class="contact-card info-card">
+                    <div class="contact-card info-card bento-card">
                         <h3>¿Buscas liderar el crecimiento orgánico de tu producto?</h3>
                         <p class="contact-info-text">
                             Estoy abierta a evaluar nuevas oportunidades como Brand Lead, SEO/GEO Manager o Content Strategist, particularmente en productos B2B SaaS y plataformas tecnológicas de alto crecimiento. Escríbeme y analicemos cómo hacer crecer tu visibilidad orgánica.
                         </p>
                         
-                        <div class="contact-detail-items">
+                        <div class="contact-detail-items font-mono">
                             <div class="detail-item">
                                 <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
                                 <div class="detail-text">
-                                    <span>Envíame un correo:</span>
+                                    <span>ENVIAR CORREO:</span>
                                     <a href="mailto:mariavanessarf7@gmail.com">mariavanessarf7@gmail.com</a>
                                 </div>
                             </div>
                             <div class="detail-item">
                                 <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
                                 <div class="detail-text">
-                                    <span>Ubicación actual:</span>
-                                    <span>Lima, Perú (Disponible para remoto LatAm / Global)</span>
+                                    <span>UBICACIÓN:</span>
+                                    <span>Lima, Perú (Remoto LatAm / Global)</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-card form-card">
+                    <div class="contact-card form-card bento-card bento-gray">
+                        <div class="card-stamp">SYS.CONNECT.FORM</div>
                         <form id="contact-form" action="https://formspree.io/f/mariavanessarf7" method="POST" class="form">
                             <div class="form-group">
                                 <label for="form-name">Nombre Completo</label>
@@ -647,7 +672,7 @@
                             <div id="form-status" class="form-status-message"></div>
 
                             <button type="submit" id="form-submit-btn" class="btn btn-primary btn-block">
-                                <span>Enviar Mensaje</span> <i class="fa-solid fa-paper-plane"></i>
+                                <span>ENVIAR MENSAJE ↗</span>
                             </button>
                         </form>
                     </div>
@@ -658,8 +683,8 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container footer-container">
-            <p class="copyright">&copy; 2026 Mava Rodríguez. Todos los derechos reservados.</p>
+        <div class="container footer-container font-mono">
+            <p class="copyright">&copy; 2026 Mava Rodríguez. Todos los derechos reservados. [SYS.V2.BUILD]</p>
             <div class="footer-socials">
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/MavaRodriguez" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>

@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ==========================================================================
        SKILL BARS INTERSECTION OBSERVER ANIMATION
        ========================================================================== */
-    const skillBars = document.querySelectorAll('.skill-bar-fill');
+    const skillBars = document.querySelectorAll('.meter-bar-fill');
     
     // Store original widths and set to 0 initially
     const originalWidths = [];
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateSkillBars = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                const visibleBars = entry.target.querySelectorAll('.skill-bar-fill');
+                const visibleBars = entry.target.querySelectorAll('.meter-bar-fill');
                 visibleBars.forEach(bar => {
                     // Find original width in our saved array
                     const allBarsArr = Array.from(skillBars);
