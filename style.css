@@ -320,7 +320,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-background-clip: unset !important;
     -webkit-text-fill-color: unset !important;
     background-clip: unset !important;
-    color: var(--color-brick) !important;
+    color: var(--color-orange) !important;
     display: inline !important;
 }
 
@@ -628,7 +628,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 3px;
-    color: var(--color-terracota);
+    color: var(--color-orange);
     margin-bottom: 12px;
 }
 
