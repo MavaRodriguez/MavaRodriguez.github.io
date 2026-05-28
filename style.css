@@ -1273,52 +1273,44 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--color-cement);
 }
 
-/* Tool Badges Grid System (Bento 4th Card) */
-.tools-container-bento {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+/* Bento Card Flat Colors (Red Dark Card for Tools) */
+.bento-red-dark {
+    background-color: #1a0f0f !important; /* Deep dark brick red background */
+    border: 1.5px solid rgba(184, 58, 45, 0.3) !important;
+    color: #f8fafc !important;
 }
 
-.tool-subcategory {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.bento-red-dark:hover {
+    border-color: var(--color-brick) !important;
+    box-shadow: 0 15px 35px -15px rgba(184, 58, 45, 0.3);
 }
 
-.tool-sub-title {
-    font-family: var(--font-mono);
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: var(--color-brick);
-}
-
-.tool-badges-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.tool-badge-item {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    font-weight: 700;
-    padding: 6px 12px;
-    border-radius: var(--border-radius-sm);
-    background-color: var(--bg-primary);
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    cursor: default;
-    transition: all var(--transition-fast);
-}
-
-.tool-badge-item:hover {
-    background-color: var(--color-brick);
+.bento-red-dark h3 {
     color: #ffffff !important;
-    border-color: var(--color-brick);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(184, 58, 45, 0.2);
+}
+
+.bento-red-dark .category-header i,
+.bento-red-dark .card-stamp {
+    color: var(--color-brick) !important;
+}
+
+.bento-red-dark span,
+.bento-red-dark p,
+.bento-red-dark li {
+    color: #e2e8f0 !important;
+}
+
+.skills-category-card.bento-red-dark .category-header {
+    border-bottom-color: rgba(184, 58, 45, 0.3) !important;
+}
+
+.skills-category-card.bento-red-dark .meter-bar-bento {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-color: rgba(184, 58, 45, 0.3) !important;
+}
+
+.bento-red-dark .meter-bar-fill {
+    background-color: var(--color-brick) !important;
 }
 
 /* ==========================================================================
