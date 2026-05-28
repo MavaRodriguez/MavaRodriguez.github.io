@@ -8,22 +8,22 @@
     --font-mono: 'Space Mono', monospace;
 
     /* Theme colors: Cyberpunk Industrial Dark (Default) */
-    --bg-primary: #08090a;          /* Deep Matte Charcoal/Black */
-    --bg-secondary: #0d0f12;        /* Sleek Slate/Charcoal Bento Card Background */
-    --border-color: rgba(255, 255, 255, 0.06);
-    --border-color-hover: rgba(255, 255, 255, 0.15);
+    --bg-primary: #0F1011;          /* Deep Sleek Graphite Black Backdrop */
+    --bg-secondary: #1B1D1F;        /* Soft Graphite Bento Card Background */
+    --border-color: rgba(146, 169, 225, 0.1); /* Soft Lavender Haze Border */
+    --border-color-hover: rgba(146, 169, 225, 0.22);
     
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --text-muted: #475569;
+    --text-primary: #F0F4F8;        /* Soft Lavender-tinted Light Text */
+    --text-secondary: #A0AEC0;      /* Cool Slate/Grey Secondary Text */
+    --text-muted: #64748B;          /* Muted Blue-grey Text */
     
-    /* Muted Industrial Retro-Tech Palette (Exact references) */
-    --color-orange: #E0A15E;        /* Cyberpunk Orange (#E0A15E from CBRPNK top reference) */
-    --color-teal: #3E6868;          /* Deep Teal (from bottom-left reference) */
-    --color-brick: #B83A2D;         /* Brick Terracotta (from bottom-right reference #B83A2D) */
-    --color-sand: #C1AB85;          /* Muted Gold-Sand (from bottom-left reference #C1AB85) */
-    --color-sage: #4E6851;          /* Muted Sage Green (from bottom-right reference #4E6851) */
-    --color-cream: #DCC9A9;         /* Cream Sand/Beige (from bottom-right reference #DCC9A9) */
+    /* Muted Industrial Retro-Tech Palette with Lavender Haze */
+    --color-orange: #92A9E1;        /* Lavender Haze (#92A9E1) as primary highlight */
+    --color-teal: #3E6868;          /* Deep Teal */
+    --color-brick: #B83A2D;         /* Brick Terracotta */
+    --color-sand: #C1AB85;          /* Muted Gold-Sand */
+    --color-sage: #4E6851;          /* Muted Sage Green */
+    --color-cream: #DCC9A9;         /* Cream Sand/Beige */
 
     /* Alias compatibility overrides for existing classes to ensure zero-risk integration */
     --color-terracota: var(--color-brick);
@@ -32,8 +32,8 @@
     --accent-1: var(--color-orange);
     --accent-gradient: none;        /* Disabled in favor of flat industrial styling */
     
-    --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
-    --card-shadow-hover: 0 20px 40px -15px rgba(224, 161, 94, 0.12);
+    --card-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+    --card-shadow-hover: 0 20px 40px -15px rgba(146, 169, 225, 0.08);
     
     /* Layout */
     --header-height: 80px;
