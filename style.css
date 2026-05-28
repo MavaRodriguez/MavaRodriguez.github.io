@@ -9,25 +9,31 @@
 
     /* Theme colors: Cyberpunk Industrial Dark (Default) */
     --bg-primary: #08090a;          /* Deep Matte Charcoal/Black */
-    --bg-secondary: #0f1216;        /* Dark Bento Card Slate */
-    --border-color: rgba(255, 255, 255, 0.08);
-    --border-color-hover: rgba(255, 255, 255, 0.2);
+    --bg-secondary: #0d0f12;        /* Sleek Slate/Charcoal Bento Card Background */
+    --border-color: rgba(255, 255, 255, 0.06);
+    --border-color-hover: rgba(255, 255, 255, 0.15);
     
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
-    --text-muted: #64748b;
+    --text-muted: #475569;
     
-    /* Muted Industrial Matte Palette (Inspired by Reference) */
-    --color-terracota: #c85542;     /* Muted Coral/Red */
-    --color-sand: #e5a158;          /* Warm Mustard/Sand */
-    --color-sage: #6c9e75;          /* Muted Sage Green */
-    --color-cement: #9ea4ac;        /* Cool Stone/Cement Gray */
+    /* Muted Industrial Retro-Tech Palette (Exact references) */
+    --color-orange: #E0A15E;        /* Cyberpunk Orange (#E0A15E from CBRPNK top reference) */
+    --color-teal: #3E6868;          /* Deep Teal (from bottom-left reference) */
+    --color-brick: #B83A2D;         /* Brick Terracotta (from bottom-right reference #B83A2D) */
+    --color-sand: #C1AB85;          /* Muted Gold-Sand (from bottom-left reference #C1AB85) */
+    --color-sage: #4E6851;          /* Muted Sage Green (from bottom-right reference #4E6851) */
+    --color-cream: #DCC9A9;         /* Cream Sand/Beige (from bottom-right reference #DCC9A9) */
+
+    /* Alias compatibility overrides for existing classes to ensure zero-risk integration */
+    --color-terracota: var(--color-brick);
+    --color-cement: var(--color-cream);
     
-    --accent-1: var(--color-sand);
-    --accent-gradient: linear-gradient(135deg, var(--color-sand) 0%, var(--color-terracota) 100%);
+    --accent-1: var(--color-orange);
+    --accent-gradient: none;        /* Disabled in favor of flat industrial styling */
     
     --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
-    --card-shadow-hover: 0 20px 40px -15px rgba(229, 161, 88, 0.15);
+    --card-shadow-hover: 0 20px 40px -15px rgba(224, 161, 94, 0.12);
     
     /* Layout */
     --header-height: 80px;
@@ -39,17 +45,41 @@
 
 /* Light Theme Variables */
 [data-theme="light"] {
-    --bg-primary: #f1f3f5;          /* Light Industrial Concrete */
-    --bg-secondary: #ffffff;        /* White Bento Card */
-    --border-color: rgba(0, 0, 0, 0.08);
-    --border-color-hover: rgba(0, 0, 0, 0.2);
+    --bg-primary: #f5f2eb;          /* Warm Concrete/Sand Light Background (Reference concrete paper) */
+    --bg-secondary: #ffffff;        /* Crisp White Bento Card */
+    --border-color: rgba(8, 9, 10, 0.08);
+    --border-color-hover: rgba(8, 9, 10, 0.15);
     
     --text-primary: #08090a;
-    --text-secondary: #475569;
-    --text-muted: #94a3b8;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
     
-    --card-shadow: 0 10px 30px -15px rgba(100, 116, 139, 0.15);
-    --card-shadow-hover: 0 20px 40px -10px rgba(198, 85, 66, 0.12);
+    --card-shadow: 0 10px 30px -15px rgba(13, 15, 18, 0.06);
+    --card-shadow-hover: 0 20px 40px -10px rgba(13, 15, 18, 0.1);
+}
+
+/* Light Mode Navigation & Header overrides to prevent black background issues */
+[data-theme="light"] .header {
+    background-color: rgba(245, 242, 235, 0.9) !important;
+    border-bottom: 1.5px solid rgba(8, 9, 10, 0.08) !important;
+}
+
+[data-theme="light"] .nav-link:hover, 
+[data-theme="light"] .nav-link.active {
+    color: var(--text-primary) !important;
+    background-color: rgba(8, 9, 10, 0.04) !important;
+}
+
+[data-theme="light"] .theme-toggle-btn {
+    background: rgba(8, 9, 10, 0.02) !important;
+}
+
+[data-theme="light"] .theme-toggle-btn:hover {
+    border-color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .nav-btn:hover {
+    color: #ffffff !important;
 }
 
 /* ==========================================================================
@@ -152,7 +182,7 @@ button {
 
 /* Bento Card Flat Colors (Matching Reference) */
 .bento-orange {
-    background-color: var(--color-sand) !important;
+    background-color: var(--color-orange) !important;
     color: #08090a !important;
     border-color: #08090a !important;
 }
@@ -162,23 +192,33 @@ button {
 }
 
 .bento-red {
-    background-color: var(--color-terracota) !important;
-    color: #ffffff !important;
-    border-color: rgba(255, 255, 255, 0.15) !important;
+    background-color: var(--bg-secondary) !important;
+    border: 1.5px solid var(--border-color) !important;
+    border-top: 5px solid var(--color-brick) !important;
+    color: var(--text-primary) !important;
 }
 
-.bento-red h3, .bento-red h4, .bento-red p, .bento-red span {
-    color: #ffffff !important;
+.bento-red:hover {
+    border-color: var(--color-brick) !important;
+    box-shadow: 0 15px 35px -15px rgba(184, 58, 45, 0.15);
+}
+
+.bento-red h3, .bento-red h4 {
+    color: var(--color-brick) !important;
+}
+
+.bento-red p, .bento-red span {
+    color: var(--text-secondary) !important;
 }
 
 .bento-green {
     background-color: var(--color-sage) !important;
-    color: #08090a !important;
+    color: #ffffff !important;
     border-color: #08090a !important;
 }
 
 .bento-green h3, .bento-green h4, .bento-green p, .bento-green span, .bento-green i {
-    color: #08090a !important;
+    color: #ffffff !important;
 }
 
 .bento-gray {
@@ -239,11 +279,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-    background: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: inline-block;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    background-clip: unset !important;
+    color: var(--color-brick) !important;
+    display: inline !important;
 }
 
 .section-padding {
