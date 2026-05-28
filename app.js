@@ -140,6 +140,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================================================
+       INTERACTIVE EXPERIENCE DASHBOARD TABS
+       ========================================================================== */
+    const tabBtns = document.querySelectorAll('.exp-tab-btn');
+    const panelContents = document.querySelectorAll('.exp-panel-content');
+
+    if (tabBtns.length > 0 && panelContents.length > 0) {
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const targetTab = btn.getAttribute('data-tab');
+                
+                // Set active tab button
+                tabBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-selected', 'false');
+                });
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+                
+                // Set active panel content
+                panelContents.forEach(panel => {
+                    panel.classList.remove('active');
+                    if (panel.getAttribute('id') === `pane-${targetTab}`) {
+                        panel.classList.add('active');
+                    }
+                });
+            });
+        });
+    }
+
+    /* ==========================================================================
        CONTACT FORM SUBMISSION WITH AJAX (FORMSPREE)
        ========================================================================== */
     const contactForm = document.getElementById('contact-form');
