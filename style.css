@@ -2010,9 +2010,29 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Inline style overrides for the STACK tag footers in Light Mode */
 [data-theme="light"] .skills-category-card .card-footer-mono {
-    color: var(--text-secondary) !important;
-    border-top-color: rgba(8, 9, 10, 0.1) !important;
+    color: var(--text-primary) !important;
+    border-top: 1.5px solid rgba(8, 9, 10, 0.08) !important;
+    opacity: 1 !important;
 }
+
 [data-theme="light"] .skills-category-card .card-footer-mono span {
-    background-color: rgba(8, 9, 10, 0.05) !important;
+    font-weight: 700 !important;
+    padding: 3px 8px !important;
+    border-radius: 4px !important;
+}
+
+/* Specific premium styling for // STACK: tag buttons in Light Mode */
+[data-theme="light"] .bento-gray-dark .card-footer-mono span {
+    background-color: rgba(184, 58, 45, 0.08) !important;
+    color: var(--color-brick) !important;
+}
+
+[data-theme="light"] .bento-green .card-footer-mono span {
+    background-color: rgba(78, 104, 81, 0.08) !important;
+    color: var(--color-sage) !important;
+}
+
+[data-theme="light"] .bento-orange-dark .card-footer-mono span {
+    background-color: rgba(224, 161, 94, 0.08) !important;
+    color: #b0681c !important; /* Darker orange for AAA contrast */
 }
