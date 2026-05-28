@@ -234,11 +234,31 @@ button {
 .bento-orange-dark {
     background-color: #1e1710 !important;
     border-color: rgba(229, 161, 88, 0.15) !important;
+    color: #ffffff !important;
+}
+
+.bento-orange-dark h3, 
+.bento-orange-dark h4, 
+.bento-orange-dark p, 
+.bento-orange-dark span, 
+.bento-orange-dark i, 
+.bento-orange-dark li {
+    color: #ffffff !important;
 }
 
 .bento-gray-dark {
     background-color: #14171a !important;
     border-color: rgba(158, 164, 172, 0.15) !important;
+    color: #ffffff !important;
+}
+
+.bento-gray-dark h3, 
+.bento-gray-dark h4, 
+.bento-gray-dark p, 
+.bento-gray-dark span, 
+.bento-gray-dark i, 
+.bento-gray-dark li {
+    color: #ffffff !important;
 }
 
 /* Card Stamps (Technical metadata labels) */
@@ -425,10 +445,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    letter-spacing: 1px;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .logo-dot {
