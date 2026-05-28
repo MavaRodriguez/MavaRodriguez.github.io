@@ -45,33 +45,36 @@
 
 /* Light Theme Variables */
 [data-theme="light"] {
-    --bg-primary: #f5f2eb;          /* Warm Concrete/Sand Light Background (Reference concrete paper) */
-    --bg-secondary: #ffffff;        /* Crisp White Bento Card */
-    --border-color: rgba(8, 9, 10, 0.08);
-    --border-color-hover: rgba(8, 9, 10, 0.15);
+    --bg-primary: #E5D7C3;          /* Warm Sand Backdrop (from enor.designs) */
+    --bg-secondary: #EBEBDF;        /* Oatmilk Latte (#EBEBDF) Card Background */
+    --border-color: rgba(233, 99, 26, 0.15); /* Soft Atomic Orange Border */
+    --border-color-hover: rgba(233, 99, 26, 0.3);
     
-    --text-primary: #08090a;
-    --text-secondary: #334155;
-    --text-muted: #64748b;
+    --text-primary: #1E1714;        /* Dark Warm Coffee Charcoal */
+    --text-secondary: #5C4F46;      /* Warm Cocoa Brown */
+    --text-muted: #8E7A6E;          /* Muted Latte Brown */
     
-    --card-shadow: 0 10px 30px -15px rgba(13, 15, 18, 0.06);
-    --card-shadow-hover: 0 20px 40px -10px rgba(13, 15, 18, 0.1);
+    --color-orange: #E9631A;        /* Atomic Orange */
+    --accent-1: #E9631A;            /* Atomic Orange as the primary button accent! */
+    
+    --card-shadow: 0 10px 30px -15px rgba(233, 99, 26, 0.08);
+    --card-shadow-hover: 0 20px 40px -10px rgba(233, 99, 26, 0.15);
 }
 
 /* Light Mode Navigation & Header overrides to prevent black background issues */
 [data-theme="light"] .header {
-    background-color: rgba(245, 242, 235, 0.9) !important;
-    border-bottom: 1.5px solid rgba(8, 9, 10, 0.08) !important;
+    background-color: rgba(229, 215, 195, 0.9) !important;
+    border-bottom: 1.5px solid rgba(233, 99, 26, 0.15) !important;
 }
 
 [data-theme="light"] .nav-link:hover, 
 [data-theme="light"] .nav-link.active {
     color: var(--text-primary) !important;
-    background-color: rgba(8, 9, 10, 0.04) !important;
+    background-color: rgba(233, 99, 26, 0.08) !important;
 }
 
 [data-theme="light"] .theme-toggle-btn {
-    background: rgba(8, 9, 10, 0.02) !important;
+    background: rgba(233, 99, 26, 0.04) !important;
 }
 
 [data-theme="light"] .theme-toggle-btn:hover {
@@ -79,6 +82,10 @@
 }
 
 [data-theme="light"] .nav-btn:hover {
+    color: #ffffff !important;
+}
+
+[data-theme="light"] .btn-primary {
     color: #ffffff !important;
 }
 
