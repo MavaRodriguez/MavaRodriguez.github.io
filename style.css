@@ -201,17 +201,17 @@ button {
 .bento-red {
     background-color: var(--bg-secondary) !important;
     border: 1.5px solid var(--border-color) !important;
-    border-top: 5px solid var(--color-brick) !important;
+    border-top: 5px solid var(--color-orange) !important;
     color: var(--text-primary) !important;
 }
 
 .bento-red:hover {
-    border-color: var(--color-brick) !important;
-    box-shadow: 0 15px 35px -15px rgba(184, 58, 45, 0.15);
+    border-color: var(--color-orange) !important;
+    box-shadow: 0 15px 35px -15px rgba(146, 169, 225, 0.15);
 }
 
 .bento-red h3, .bento-red h4 {
-    color: var(--color-brick) !important;
+    color: var(--color-orange) !important;
 }
 
 .bento-red p, .bento-red span {
@@ -219,13 +219,18 @@ button {
 }
 
 .bento-green {
-    background-color: var(--color-sage) !important;
-    color: #ffffff !important;
-    border-color: #08090a !important;
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-color) !important;
 }
 
 .bento-green h3, .bento-green h4, .bento-green p, .bento-green span, .bento-green i {
-    color: #ffffff !important;
+    color: var(--text-primary) !important;
+}
+
+.bento-green .category-header h3,
+.bento-green .category-header i {
+    color: var(--color-sage) !important;
 }
 
 .bento-gray {
@@ -239,9 +244,9 @@ button {
 }
 
 .bento-orange-dark {
-    background-color: #1e1710 !important;
-    border-color: rgba(229, 161, 88, 0.15) !important;
-    color: #ffffff !important;
+    background-color: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
 }
 
 .bento-orange-dark h3, 
@@ -250,13 +255,18 @@ button {
 .bento-orange-dark span, 
 .bento-orange-dark i, 
 .bento-orange-dark li {
-    color: #ffffff !important;
+    color: var(--text-primary) !important;
+}
+
+.bento-orange-dark .category-header h3,
+.bento-orange-dark .category-header i {
+    color: var(--color-orange) !important;
 }
 
 .bento-gray-dark {
-    background-color: #14171a !important;
-    border-color: rgba(158, 164, 172, 0.15) !important;
-    color: #ffffff !important;
+    background-color: var(--bg-secondary) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-primary) !important;
 }
 
 .bento-gray-dark h3, 
@@ -265,7 +275,7 @@ button {
 .bento-gray-dark span, 
 .bento-gray-dark i, 
 .bento-gray-dark li {
-    color: #ffffff !important;
+    color: var(--text-primary) !important;
 }
 
 /* Card Stamps (Technical metadata labels) */
@@ -771,7 +781,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .adsr-bar.active {
-    background-color: var(--color-terracota) !important;
+    background-color: var(--color-orange) !important;
 }
 
 .adsr-bar span {
