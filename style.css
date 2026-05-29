@@ -1377,7 +1377,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bento-gray-dark .meter-bar-fill {
-    background-color: var(--color-cement);
+    background-color: var(--color-terracota);
 }
 
 /* Bento Card Flat Colors (Red Dark Card for Tools) */
@@ -2016,7 +2016,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Specific Meter Bar Fills for light theme to pop beautifully */
 [data-theme="light"] .skills-category-card.bento-gray-dark .meter-bar-fill {
-    background-color: var(--text-muted) !important;
+    background-color: var(--color-terracota) !important;
 }
 [data-theme="light"] .skills-category-card.bento-green .meter-bar-fill {
     background-color: var(--color-sage) !important;
