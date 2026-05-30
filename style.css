@@ -459,12 +459,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: var(--text-primary);
     text-decoration: none;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .logo-dot {
@@ -486,17 +487,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-list {
     display: flex;
-    gap: 20px;
+    gap: 12px;
 }
 
 .nav-link {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: var(--text-secondary);
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: var(--border-radius-sm);
     border: 1.5px solid transparent;
+    white-space: nowrap;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -507,7 +509,8 @@ h1, h2, h3, h4, h5, h6 {
 .nav-btn {
     border: 1.5px solid var(--accent-1);
     color: var(--accent-1);
-    padding: 8px 16px;
+    padding: 6px 14px;
+    white-space: nowrap;
 }
 
 .nav-btn:hover {
@@ -2024,7 +2027,7 @@ h1, h2, h3, h4, h5, h6 {
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
 
-@media (max-width: 992px) {
+@media (max-width: 1080px) {
     .hero-container {
         grid-template-columns: 1fr;
         gap: 40px;
