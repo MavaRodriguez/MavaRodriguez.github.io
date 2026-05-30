@@ -1775,6 +1775,35 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.08);
 }
 
+.cert-placeholder-fallback {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-orange);
+    transition: transform var(--transition-normal);
+}
+
+.cert-placeholder-fallback i {
+    font-size: 2rem;
+}
+
+.cert-placeholder-fallback span {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+}
+
+.cert-img-wrapper:hover .cert-placeholder-fallback {
+    transform: scale(1.08);
+}
+
 .cert-info {
     display: flex;
     flex-direction: column;
