@@ -1575,6 +1575,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
     border-bottom: 1.5px solid rgba(8, 9, 10, 0.15);
     padding-bottom: 16px;
+    position: relative; /* Set relative to allow card-stamp positioning relative to header boundaries */
 }
 
 .skills-category-card.bento-orange-dark .category-header,
@@ -1590,6 +1591,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
     font-weight: 700;
     text-transform: uppercase;
+    padding-right: 120px; /* Prevent text overlap with absolute-positioned corner stamp */
+}
+
+.skills-category-card .card-stamp {
+    position: absolute !important;
+    top: 4px !important;
+    right: 0 !important;
 }
 
 .skills-list-bento {
@@ -1862,10 +1870,16 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.03);
 }
 
+.production-card .card-stamp {
+    top: 30px !important;
+    right: 30px !important;
+}
+
 .production-content h4 {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 12px;
+    padding-right: 170px; /* Prevent text overlap with EDUCATION card stamp */
 }
 
 .production-content p {
@@ -2221,6 +2235,33 @@ h1, h2, h3, h4, h5, h6 {
     .exp-metrics-grid {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+    
+    /* Responsive overrides to prevent card stamps from overlapping title text */
+    .skills-category-card .category-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .skills-category-card .category-header h3 {
+        padding-right: 0 !important;
+    }
+    
+    .skills-category-card .card-stamp {
+        position: static !important;
+        margin-top: 8px;
+        align-self: flex-start;
+    }
+    
+    .production-card .card-stamp {
+        position: static !important;
+        display: block !important;
+        margin-bottom: 12px;
+    }
+    
+    .production-content h4 {
+        padding-right: 0 !important;
     }
 }
 
