@@ -1286,6 +1286,272 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   CASE STUDIES SECTION (CASOS DE ÉXITO)
+   ========================================================================== */
+
+.cases-accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.case-card-details {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    transition: all var(--transition-normal);
+    overflow: hidden;
+}
+
+/* Color Accent Left Borders & Meta Colors based on theme variables */
+.case-card-details[data-color="orange"] { border-left: 4px solid var(--color-orange); }
+.case-card-details[data-color="sage"] { border-left: 4px solid var(--color-sage); }
+.case-card-details[data-color="brick"] { border-left: 4px solid var(--color-brick); }
+.case-card-details[data-color="teal"] { border-left: 4px solid var(--color-teal); }
+
+.case-card-details[data-color="orange"] .case-category,
+.case-card-details[data-color="orange"] .block-title i { color: var(--color-orange); }
+
+.case-card-details[data-color="sage"] .case-category,
+.case-card-details[data-color="sage"] .block-title i { color: var(--color-sage); }
+
+.case-card-details[data-color="brick"] .case-category,
+.case-card-details[data-color="brick"] .block-title i { color: var(--color-brick); }
+
+.case-card-details[data-color="teal"] .case-category,
+.case-card-details[data-color="teal"] .block-title i { color: var(--color-teal); }
+
+.case-card-details:hover {
+    border-color: var(--border-color-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--card-shadow);
+}
+
+.case-card-details[open] {
+    box-shadow: var(--card-shadow-hover);
+    border-color: var(--border-color-hover);
+}
+
+/* Summary styles */
+.case-card-summary {
+    display: block; /* Custom display */
+    padding: 28px 36px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+}
+
+.case-card-summary::-webkit-details-marker {
+    display: none; /* Hide default chevron */
+}
+
+.case-card-summary::marker {
+    display: none; /* Hide default chevron in Firefox */
+}
+
+.case-summary-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.case-category {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.case-stamp {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.case-summary-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.case-title {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.case-trigger-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border-color);
+    transition: all var(--transition-normal);
+}
+
+[data-theme="light"] .case-trigger-icon {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.case-card-details:hover .case-trigger-icon {
+    border-color: var(--border-color-hover);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme="light"] .case-card-details:hover .case-trigger-icon {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.case-chevron {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    transition: transform var(--transition-normal);
+}
+
+.case-card-details[open] .case-chevron {
+    transform: rotate(180deg);
+}
+
+/* Expanded body */
+.case-card-body {
+    padding: 0 36px 36px 36px;
+    border-top: 1.5px solid rgba(255, 255, 255, 0.03);
+    animation: slideDown var(--transition-normal) ease-out;
+}
+
+[data-theme="light"] .case-card-body {
+    border-top: 1.5px solid rgba(0, 0, 0, 0.04);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.case-block {
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: var(--border-radius-sm);
+    padding: 24px;
+    height: 100%;
+}
+
+[data-theme="light"] .case-block {
+    background: rgba(0, 0, 0, 0.015);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.block-title {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-primary);
+}
+
+.case-block p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.case-tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.case-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.case-bullets li {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.case-bullets li:last-child {
+    margin-bottom: 0;
+}
+
+.case-bullets li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    font-size: 0.95rem;
+}
+
+.case-card-details[data-color="orange"] .case-bullets li::before { color: var(--color-orange); }
+.case-card-details[data-color="sage"] .case-bullets li::before { color: var(--color-sage); }
+.case-card-details[data-color="brick"] .case-bullets li::before { color: var(--color-brick); }
+.case-card-details[data-color="teal"] .case-bullets li::before { color: var(--color-teal); }
+
+.case-bullets strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+/* Responsiveness for Case Studies Grid */
+@media (max-width: 768px) {
+    .case-card-summary {
+        padding: 20px 24px;
+    }
+    .case-title {
+        font-size: 1.05rem;
+    }
+    .case-card-body {
+        padding: 0 24px 24px 24px;
+    }
+    .case-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .case-block {
+        padding: 20px;
+    }
+}
+
+/* ==========================================================================
    SKILLS SECTION (BENTO ANALOG METERS)
    ========================================================================== */
 
